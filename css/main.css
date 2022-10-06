@@ -1,0 +1,27 @@
+/* ## Hero ## */
+
+.hero {
+    padding: 3.5rem 0;
+    background-color: #FEFAF5;
+}
+.flex-container--hero {
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__details {width: 40%;}
+.hero__title {font-size: 2rem;}
+.hero__slogan {
+    color: #335576;
+    margin: 2.7rem 0 2.2rem;
+}
+.hero__action {
+    background-color: #DB7A4E;
+    color: #FFFFFF;
+    padding: .5rem 2rem;
+    border-radius: 1.2rem;
+}
+.hero__action:hover, .hero__action:active {color: #FFFFFF;}
+.hero__imagery {
+    width: 100%;
+    max-width: 500px;
+}
