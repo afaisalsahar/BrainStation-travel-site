@@ -1,0 +1,67 @@
+/* ## Reset ## */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* ## Default Styles ## */
+
+body {
+    font-family: Verdana;
+    font-weight: 400;
+    color: #222222;
+}
+a {
+    color: #222222;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: #335576;
+}
+
+/* ## Website Container ## */
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.flex-container {display: flex;}
+
+/* ## Topbar - Navigation Menu ## */
+.topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #FFFFFF;
+    padding: 1rem 0;
+}
+.flex-container--topbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar__logo-link {color: #335576;}
+.topbar__logo-link:hover, .topbar__logo-link:active {color: #335576;}
+.topbar__logo-name {font-size: 1.5rem;}
+.topbar__navigation-items {
+    display: flex;
+    list-style: none;
+}
+.topbar__navigation-item {margin-right: 2rem;}
+.topbar__navigation-item--last {margin-right: 0;}
+
+.topbar__navigation-link {
+    padding-bottom: .5rem;
+}
+.topbar__navigation-link:hover,
+.topbar__navigation-link:hover,
+.topbar__navigation-item--active {
+    color: #222222;
+    border-bottom: .20rem solid #DB7A4E;
+}
