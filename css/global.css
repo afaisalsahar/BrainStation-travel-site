@@ -18,8 +18,8 @@ a {
     color: #222222;
     text-decoration: none;
 }
-a:hover,
-a:active {
+h1, h2, h3, h4, h5, h6,
+a:hover, a:active {
     color: #335576;
 }
 
@@ -33,6 +33,7 @@ a:active {
 .flex-container {display: flex;}
 
 /* ## Topbar - Navigation Menu ## */
+
 .topbar {
     position: fixed;
     width: 100%;
@@ -64,4 +65,35 @@ a:active {
 .topbar__navigation-item--active {
     color: #222222;
     border-bottom: .20rem solid #DB7A4E;
+}
+
+/* ## Footer - Contact Card ## */
+
+.flex-container--contact-card {
+    justify-content: center;
+    align-items: center;
+}
+.contact-card {
+    padding: 3.5rem 0;
+    background-color: #FEFAF5;
+}
+.contact-card__title {margin: 0 0 2rem;}
+.contact-card__info {color: #335576;}
+.contact-card__label {
+    margin: 0 0 .5rem;
+    display: block;
+    color: #DB7A4E;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.contact-card__day-time--spacer,
+.contact-card__social-link--spacer {margin: 0 2rem;}
+.contact-card--spacer {margin: 0 7rem;}
+.contact-card__social-icon {
+    width: 100%;
+    max-width: 2rem;
+}
+.contact-card__social-icon--facebook {
+    width: 100%;
+    max-width: 1rem;
 }
