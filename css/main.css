@@ -42,9 +42,12 @@
     border-radius: .35rem;
     margin-right: 4rem;
 }
+.destinations-card__link::last-child {
+    margin-right: 0;
+}
 .destinations-card__image {
     width: 100%;
-    max-width: 15rem;
+    max-width: 250px;
     border-radius: .35rem;
     background-color: rgba(0,0,0,.2);
     border: 1px solid rgba(0,0,0,.2);
