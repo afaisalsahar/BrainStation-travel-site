@@ -25,3 +25,35 @@
     width: 100%;
     max-width: 500px;
 }
+
+/* ## Destinations ## */
+.flex-container--destinations-card {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.destinations-card {padding: 3rem 0 4rem;}
+.destinations-card__main-title {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+}
+.destinations-card__link {
+    position: relative;
+    border-radius: .35rem;
+    margin-right: 4rem;
+}
+.destinations-card__image {
+    width: 100%;
+    max-width: 15rem;
+    border-radius: .35rem;
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 4px 4px rgba(0,0,0,.2);
+}
+.destinations-card__title {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
