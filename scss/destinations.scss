@@ -1,3 +1,7 @@
+@use './partials/variables' as *;
+@use './partials/reset' as *;
+@use './partials/globals' as *;
+
 /* ## Itinerary Card ## */
 .itinerary-card {
     padding: 4rem 0 7rem;
@@ -8,11 +12,7 @@
 .itinerary-card--hawaii {background-image: url("../assets/Images/hawaii.jpg");}
 .itinerary-card--iceland {background-image: url("../assets/Images/iceland.jpg");}
 .itinerary-card--greece {background-image: url("../assets/Images/greece.jpg");}
-.flex-container--itinerary-card {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+
 .itinerary-card__day {
     width: 100%;
     max-width: 250px;

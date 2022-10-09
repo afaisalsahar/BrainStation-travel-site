@@ -1,3 +1,7 @@
+@use './partials/variables' as *;
+@use './partials/reset' as *;
+@use './partials/globals' as *;
+
 /* ## Hero ## */
 
 .hero {
@@ -19,19 +23,18 @@
     color: #FFFFFF;
     padding: .5rem 2rem;
     border-radius: 1.2rem;
+    transition: all .3s;
 }
-.hero__action:hover, .hero__action:active {color: #FFFFFF;}
+.hero__action:hover, .hero__action:active {
+    background-color: #b56540;
+    color: #FFFFFF;
+}
 .hero__imagery {
     width: 100%;
     max-width: 500px;
 }
 
 /* ## Destinations ## */
-.flex-container--destinations-card {
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 .destinations-card {padding: 3rem 0 4rem;}
 .destinations-card__main-title {
     flex: 0 0 100%;
@@ -42,8 +45,11 @@
     border-radius: .35rem;
     margin-right: 4rem;
 }
-.destinations-card__link::last-child {
+.destinations-card__link:last-child {
     margin-right: 0;
+}
+.destinations-card__link:hover > .destinations-card__image {
+    filter: brightness(.8);
 }
 .destinations-card__image {
     width: 100%;
@@ -52,6 +58,7 @@
     background-color: rgba(0,0,0,.2);
     border: 1px solid rgba(0,0,0,.2);
     box-shadow: 0 4px 4px rgba(0,0,0,.2);
+    transition: all .3s;
 }
 .destinations-card__title {
     position: absolute;

@@ -1,30 +1,6 @@
-/* ## Reset ## */
+@use './variables' as *;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-/* ## Default Styles ## */
-
-body {
-    font-family: Verdana;
-    font-weight: 400;
-    color: #222222;
-}
-main {margin-top:4rem;}
-a {
-    color: #222222;
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6,
-a:hover, a:active {
-    color: #335576;
-}
-
-/* ## Website Container ## */
+/* ## Wrapper/Container ## */
 
 .container {
     width: 1280px;
@@ -32,6 +8,17 @@ a:hover, a:active {
 }
 
 .flex-container {display: flex;}
+.flex-container--topbar,
+.flex-container--contact-card,
+.flex-container--itinerary-card,
+.flex-container--destinations-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container--topbar {
+    justify-content: space-between;
+}
 
 /* ## Topbar - Navigation Menu ## */
 
@@ -41,15 +28,11 @@ a:hover, a:active {
     top: 0;
     left: 0;
     z-index: 999;
-    background: #FFFFFF;
+    background: $secondary-color;
     padding: 1rem 0;
 }
-.flex-container--topbar {
-    justify-content: space-between;
-    align-items: center;
-}
-.topbar__logo-link {color: #335576;}
-.topbar__logo-link:hover, .topbar__logo-link:active {color: #335576;}
+.topbar__logo-link {color: $highlight-color}
+.topbar__logo-link:hover, .topbar__logo-link:active {color: $highlight-color}
 .topbar__logo-name {font-size: 1.5rem;}
 .topbar__navigation-items {
     display: flex;
@@ -64,26 +47,22 @@ a:hover, a:active {
 .topbar__navigation-link:hover,
 .topbar__navigation-link:hover,
 .topbar__navigation-item--active {
-    color: #222222;
-    border-bottom: .20rem solid #DB7A4E;
+    color: $primary-color;
+    border-bottom: .20rem solid $accent-color;
 }
 
 /* ## Footer - Contact Card ## */
 
-.flex-container--contact-card {
-    justify-content: center;
-    align-items: center;
-}
 .contact-card {
     padding: 3.5rem 0;
-    background-color: #FEFAF5;
+    background-color: $secondary-color;
 }
 .contact-card__title {margin: 0 0 2rem;}
-.contact-card__info {color: #335576;}
+.contact-card__info {color: $highlight-color;}
 .contact-card__label {
     margin: 0 0 .5rem;
     display: block;
-    color: #DB7A4E;
+    color: $accent-color;
     font-size: .7rem;
     text-transform: uppercase;
 }
