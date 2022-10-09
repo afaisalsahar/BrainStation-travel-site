@@ -1,6 +1,7 @@
 @use './partials/variables' as *;
 @use './partials/reset' as *;
 @use './partials/globals' as *;
+@use './partials/mixins' as *;
 
 /* ## Itinerary Card ## */
 .itinerary-card {
@@ -9,9 +10,9 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.itinerary-card--hawaii {background-image: url("../assets/Images/hawaii.jpg");}
-.itinerary-card--iceland {background-image: url("../assets/Images/iceland.jpg");}
-.itinerary-card--greece {background-image: url("../assets/Images/greece.jpg");}
+.itinerary-card--hawaii {@include iternary-card-background("hawaii");}
+.itinerary-card--iceland {@include iternary-card-background("iceland");}
+.itinerary-card--greece {@include iternary-card-background("greece");}
 
 .itinerary-card__day {
     width: 100%;
@@ -20,7 +21,7 @@
     margin-right: 4rem;
     border-radius: .35rem;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: $secondary-color;
     box-shadow: 0 0 1px rgba(0,0,0,.2);
 }
 .itinerary-card__day::last-child {
@@ -30,7 +31,7 @@
     flex: 0 0 100%;
     margin-bottom: 3rem;
     font-size: 4rem;
-    color: #FFFFFF;
+    color: $secondary-color;
     text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 .itinerary-card__day-title {
@@ -44,5 +45,5 @@
 .itinerary-card__activity {
     margin-bottom: 1rem;
     padding: 1rem 0;
-    background-color: #FEFAF5;
+    background-color: $spotlight-color;
 }
