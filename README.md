@@ -5,7 +5,7 @@ This project entails creating a basic functional multi-page static travel destin
 BEM methodology is used for class names and Flexbox for layout. The layout is responsive and looks good at all dimensions. 
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Mockup](https://raw.githubusercontent.com/afaisalsahar/BrainStation-travel-site/main/mockups/images/TravelSiteMockup.jpg)
 
 
 ## Functional Requirements
